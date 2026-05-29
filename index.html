@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <title>성일과 초콜릿 학교</title>
 
@@ -41,7 +41,7 @@
       inset:0;
 
       background-image:
-      radial-gradient(rgba(255,255,255,0.15) 1px, transparent 1px),
+      radial-gradient(rgba(255,255,255,0.12) 1px, transparent 1px),
       radial-gradient(rgba(255,220,180,0.08) 1px, transparent 1px);
 
       background-size:120px 120px,180px 180px;
@@ -58,7 +58,7 @@
 
       backdrop-filter:blur(12px);
 
-      background:rgba(30,15,5,0.6);
+      background:rgba(25,12,5,0.65);
 
       padding:20px 40px;
 
@@ -70,7 +70,7 @@
     }
 
     .logo{
-      font-size:1.8rem;
+      font-size:1.9rem;
       font-weight:bold;
       color:#ffe2b8;
     }
@@ -151,7 +151,7 @@
     }
 
     .hero h1{
-      font-size:4.5rem;
+      font-size:4.7rem;
       line-height:1.2;
 
       color:#ffe2b8;
@@ -160,7 +160,7 @@
     }
 
     .hero p{
-      font-size:1.3rem;
+      font-size:1.25rem;
       line-height:1.9;
 
       color:#fff1df;
@@ -214,14 +214,14 @@
     }
 
     h2{
-      font-size:2.5rem;
+      font-size:2.6rem;
       margin-bottom:35px;
       color:#ffe2b8;
     }
 
     .card-grid{
       display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
       gap:25px;
     }
 
@@ -269,10 +269,6 @@
       color:#fff1df;
     }
 
-    ul{
-      padding-left:18px;
-    }
-
     .weather-box{
       font-size:1.2rem;
       line-height:2;
@@ -287,13 +283,19 @@
     }
 
     iframe{
-      border-radius:18px;
+      border-radius:20px;
     }
 
     footer{
       text-align:center;
-      padding:50px 20px;
+      padding:60px 20px;
       color:#fff1df;
+    }
+
+    .source-link{
+      display:inline-block;
+      margin-top:15px;
+      color:#ffd27d;
     }
 
     @media (max-width:900px){
@@ -332,11 +334,11 @@
   <nav>
     <a href="#intro">소개</a>
     <a href="#weather">날씨</a>
-    <a href="#busan">부산 이슈</a>
+    <a href="#busan">부산</a>
     <a href="#pknu">부경대</a>
     <a href="#stats">사회복지</a>
     <a href="#trend">트렌드</a>
-    <a href="#music">플레이리스트</a>
+    <a href="#music">음악</a>
   </nav>
 
 </header>
@@ -353,10 +355,10 @@
     </h1>
 
     <p>
-      부산의 날씨, 사회복지 트렌드,
-      부경대학교 소식과 청년 이슈를
-      감성적인 초콜릿 무드로 담아낸
-      정보형 홈페이지입니다.
+      부산의 이슈와 사회복지,
+      청년 트렌드와 데이터 흐름을
+      초콜릿처럼 부드럽고 감성적인 분위기로
+      담아낸 정보형 홈페이지입니다.
     </p>
 
     <div class="hero-badge">
@@ -387,7 +389,7 @@
 
 </section>
 
-<!-- 부산 이슈 -->
+<!-- 부산 -->
 
 <section id="busan">
 
@@ -401,7 +403,7 @@
 
       <p>
         해운대와 광안리를 중심으로
-        관광객 증가와 지역 소비가
+        관광객 유입과 지역 소비가
         활발하게 이어지고 있습니다.
       </p>
 
@@ -420,12 +422,11 @@
 
     <div class="card">
 
-      <h3>👩‍🎓 청년 정책</h3>
+      <h3>🎮 부산 콘텐츠 산업</h3>
 
       <p>
-        청년 유출 문제 해결을 위한
-        정주 정책과 지역 일자리 정책이
-        강화되고 있습니다.
+        부산인디게임페스티벌(BIC) 등
+        지역 기반 콘텐츠 산업 성장도 주목받고 있습니다.
       </p>
 
     </div>
@@ -455,11 +456,11 @@
 
     <div class="card">
 
-      <h3>🤖 AI 기반 융합 교육</h3>
+      <h3>🤖 AI · 데이터 교육</h3>
 
       <p>
-        AI · 데이터 기반 수업과
-        디지털 역량 강화 교육이 확대되고 있습니다.
+        AI와 데이터 기반 융합 교육이
+        대학 현장에서 확대되고 있습니다.
       </p>
 
     </div>
@@ -469,8 +470,8 @@
       <h3>🌱 지역사회 협력</h3>
 
       <p>
-        부산 지역사회와 연계한
-        다양한 사회서비스 프로젝트가 운영되고 있습니다.
+        지역사회 문제 해결형 프로젝트와
+        사회서비스 프로그램이 활성화되고 있습니다.
       </p>
 
     </div>
@@ -496,7 +497,8 @@
       </div>
 
       <p>
-        대한민국은 빠르게 고령사회로 진입하고 있습니다.
+        대한민국은 빠르게 고령사회로
+        진입하고 있습니다.
       </p>
 
     </div>
@@ -510,7 +512,8 @@
       </div>
 
       <p>
-        청년 정신건강 지원의 중요성이 확대되고 있습니다.
+        청년 정신건강 지원의 중요성이
+        확대되고 있습니다.
       </p>
 
     </div>
@@ -524,7 +527,8 @@
       </div>
 
       <p>
-        사회적 고립과 돌봄 문제에 대한 관심이 증가하고 있습니다.
+        사회적 고립과 돌봄 문제에 대한
+        관심이 증가하고 있습니다.
       </p>
 
     </div>
@@ -546,35 +550,54 @@
       <h3>💡 AI 기반 소비 증가</h3>
 
       <p>
-        AI 추천 시스템과 데이터 기반 소비가
-        청년층의 일상 속에 자리잡고 있습니다.
+        AI 추천 시스템과 데이터 기반 플랫폼 소비가
+        청년층 일상 속으로 빠르게 확산되고 있습니다.
       </p>
 
     </div>
 
     <div class="card">
 
-      <h3>🌱 경험 중심 라이프스타일</h3>
+      <h3>🌱 경험 중심 소비</h3>
 
       <p>
-        단순 소유보다 경험과 감정적 만족을
-        중시하는 소비 경향이 확대되고 있습니다.
+        단순 소유보다 경험과 감정적 만족,
+        자기계발을 중시하는 소비 경향이
+        확대되고 있습니다.
       </p>
 
     </div>
 
     <div class="card">
 
-      <h3>📱 디지털 사회 변화</h3>
+      <h3>📱 디지털 라이프스타일</h3>
 
       <p>
-        모바일 기반 커뮤니티와 콘텐츠 소비가
-        관계 형성 방식에도 영향을 주고 있습니다.
+        모바일 콘텐츠와 디지털 커뮤니티가
+        사회적 관계 형성 방식에도 영향을 주고 있습니다.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>🧠 데이터 · 빅데이터 관심 증가</h3>
+
+      <p>
+        빅데이터 분석과 AI 활용 교육에 대한 관심이
+        청년층과 대학 현장에서 확대되고 있습니다.
       </p>
 
     </div>
 
   </div>
+
+  <a
+    class="source-link"
+    href="https://www.thebigdata.co.kr/view.php?ud=2026042023193657119511086197_23"
+    target="_blank">
+    🔗 참고 기사 보기
+  </a>
 
 </section>
 
@@ -588,11 +611,11 @@
 
     <div class="card">
 
-      <h3>🍫 볼빨간사춘기 - 초콜릿</h3>
+      <h3>🍫 아일릿 - Almond Chocolate</h3>
 
       <p>
-        달콤하고 감성적인 분위기의 곡으로,
-        홈페이지의 따뜻한 무드와 잘 어울립니다.
+        달콤하면서도 몽환적인 분위기의 곡으로,
+        초콜릿 감성 홈페이지와 잘 어울리는 음악입니다.
       </p>
 
       <br>
@@ -600,8 +623,8 @@
       <iframe
         width="100%"
         height="220"
-        src="https://www.youtube.com/embed/5qap5aO4i9A"
-        title="Chocolate Music"
+        src="https://www.youtube.com/embed/6iZ1-2BniLw"
+        title="ILLIT Almond Chocolate"
         frameborder="0"
         allowfullscreen>
       </iframe>
@@ -613,7 +636,8 @@
       <h3>🍫 The 1975 - Chocolate</h3>
 
       <p>
-        몽환적이고 세련된 초콜릿 감성의 팝 스타일 곡입니다.
+        세련되고 부드러운 분위기의
+        초콜릿 감성 팝 스타일 곡입니다.
       </p>
 
       <br>
@@ -636,7 +660,7 @@
 <footer>
 
   © 2026 성일과 초콜릿 학교 🍫 <br>
-  GitHub Pages Portfolio Website
+  Chocolate Mood Portfolio Website
 
 </footer>
 
