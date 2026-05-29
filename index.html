@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>부경대 사회복지 실무역량 짱이다</title>
+
   <style>
     * {
       margin: 0;
@@ -29,10 +30,13 @@
         radial-gradient(white 1px, transparent 1px),
         radial-gradient(#fff3a1 1px, transparent 1px),
         radial-gradient(#fffde7 1px, transparent 1px);
+
       background-size: 80px 80px, 120px 120px, 160px 160px;
       background-position: 0 0, 40px 60px, 100px 20px;
+
       opacity: 0.6;
       z-index: -1;
+
       animation: twinkle 12s linear infinite;
     }
 
@@ -44,7 +48,7 @@
 
     header {
       text-align: center;
-      padding: 80px 20px 50px;
+      padding: 60px 20px 30px;
     }
 
     h1 {
@@ -60,68 +64,6 @@
       color: #5c4300;
     }
 
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 25px;
-      padding-bottom: 60px;
-    }
-
-    .card {
-      background: rgba(255, 248, 210, 0.25);
-      backdrop-filter: blur(8px);
-      border: 1px solid rgba(255,255,255,0.45);
-      border-radius: 25px;
-      padding: 25px;
-      box-shadow: 0 0 25px rgba(255, 217, 94, 0.35);
-      transition: 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 0 35px rgba(255, 196, 0, 0.45);
-    }
-
-    .card h2 {
-      margin-bottom: 20px;
-      color: #5c4300;
-      font-size: 1.8rem;
-      text-shadow: 0 0 10px rgba(255,255,255,0.5);
-    }
-
-    .weather-box {
-      font-size: 1.1rem;
-      line-height: 2;
-    }
-
-    ul {
-      list-style: none;
-    }
-
-    li {
-      margin-bottom: 15px;
-      line-height: 1.6;
-      border-left: 3px solid #ffbf00;
-      padding-left: 10px;
-    }
-
-    .stat-number {
-      font-size: 2.2rem;
-      color: #8a5a00;
-      font-weight: bold;
-      margin: 10px 0;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      color: #5a4700;
-      font-size: 0.95rem;
-    }
-
     .badge {
       display: inline-block;
       margin-top: 15px;
@@ -130,15 +72,6 @@
       border-radius: 999px;
       color: #6b4b00;
       font-size: 0.9rem;
-    }
-
-    a {
-      color: #6b4b00;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
     }
 
     .menu {
@@ -167,6 +100,139 @@
       background: rgba(255,255,255,0.6);
     }
 
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 400px;
+      align-items: center;
+      gap: 50px;
+
+      width: 90%;
+      max-width: 1200px;
+
+      margin: 0 auto 50px auto;
+      padding: 60px;
+
+      border-radius: 35px;
+
+      background: rgba(255,255,255,0.25);
+      backdrop-filter: blur(10px);
+
+      box-shadow: 0 0 30px rgba(255, 200, 0, 0.25);
+    }
+
+    .hero-text h1 {
+      font-size: 4rem;
+      line-height: 1.3;
+      color: #5c4300;
+      margin-bottom: 25px;
+    }
+
+    .hero-desc {
+      font-size: 1.3rem;
+      line-height: 1.8;
+      color: #6b4b00;
+      margin-bottom: 25px;
+    }
+
+    .hero-message {
+      display: inline-block;
+      padding: 12px 20px;
+
+      background: rgba(255,255,255,0.5);
+
+      border-radius: 999px;
+
+      font-size: 1rem;
+      color: #7a5600;
+      font-weight: bold;
+    }
+
+    .hero-image {
+      text-align: center;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-width: 350px;
+
+      border-radius: 30px;
+
+      border: 8px solid rgba(255,255,255,0.7);
+
+      box-shadow: 0 0 30px rgba(255, 191, 0, 0.4);
+
+      transition: 0.3s ease;
+    }
+
+    .hero-image img:hover {
+      transform: scale(1.03);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding-bottom: 60px;
+    }
+
+    .card {
+      background: rgba(255, 248, 210, 0.25);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.45);
+      border-radius: 25px;
+      padding: 25px;
+      box-shadow: 0 0 25px rgba(255, 217, 94, 0.35);
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 35px rgba(255, 196, 0, 0.45);
+    }
+
+    .card h2 {
+      margin-bottom: 20px;
+      color: #5c4300;
+      font-size: 1.8rem;
+    }
+
+    .weather-box {
+      font-size: 1.1rem;
+      line-height: 2;
+      color: #5c4300;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      margin-bottom: 15px;
+      line-height: 1.6;
+      border-left: 3px solid #ffbf00;
+      padding-left: 10px;
+      color: #5c4300;
+    }
+
+    .stat-number {
+      font-size: 2.2rem;
+      color: #8a5a00;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #5a4700;
+      font-size: 0.95rem;
+    }
+
+    a {
+      color: #6b4b00;
+      text-decoration: none;
+    }
+
     .page {
       display: none !important;
     }
@@ -178,34 +244,79 @@
     .hero.page.active {
       display: grid !important;
     }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 40px 25px;
+      }
+
+      .hero-text h1 {
+        font-size: 2.7rem;
+      }
+
+      .hero-image img {
+        max-width: 260px;
+      }
+    }
   </style>
 </head>
+
 <body>
 
   <header>
     <h1>부경대 사회복지 실무역량 짱이다</h1>
-    <p class="subtitle">부산 · 사회복지 · 대학 정보 통합 홈페이지</p>
-    <div class="badge">GitHub Pages Portfolio Style</div>
+
+    <p class="subtitle">
+      부산 · 사회복지 · 대학 정보 통합 홈페이지
+    </p>
+
+    <div class="badge">
+      GitHub Pages Portfolio Style
+    </div>
   </header>
 
   <nav class="menu">
+    <button onclick="showPage('home')">메인</button>
     <button onclick="showPage('weather')">날씨</button>
     <button onclick="showPage('busan')">부산 이슈</button>
     <button onclick="showPage('pknu')">부경대 뉴스</button>
     <button onclick="showPage('stats')">사회복지 통계</button>
   </nav>
 
+  <section class="hero page active" id="home">
+    <div class="hero-text">
+      <h1>부경대 사회복지 실무역량 짱이다 ✨</h1>
+
+      <p class="hero-desc">
+        부산의 날씨, 이슈, 부경대 뉴스와 사회복지 통계를
+        한눈에 확인하세요!
+      </p>
+
+      <p class="hero-message">
+        함께 배우고 성장하는 사회복지 실무 역량 🌟
+      </p>
+    </div>
+
+    <div class="hero-image">
+      <img src="./41351505-a817-4b65-a70f-9bb7e0b6d6fd.png" alt="프로필 사진">
+    </div>
+  </section>
+
   <main class="container">
 
-    <section id="weather" class="card page active">
+    <section id="weather" class="card page">
       <h2>🌤 오늘의 날씨</h2>
-      <div class="weather-box" id="weather">
+
+      <div class="weather-box" id="weatherBox">
         날씨 정보를 불러오는 중...
       </div>
     </section>
 
     <section id="busan" class="card page">
       <h2>🔥 부산의 이슈</h2>
+
       <ul>
         <li>부산 글로벌 허브도시 추진 관련 정책 논의 확대</li>
         <li>2030 부산 관광 활성화 프로젝트 진행</li>
@@ -216,6 +327,7 @@
 
     <section id="pknu" class="card page">
       <h2>🏫 부경대 관련 뉴스</h2>
+
       <ul>
         <li>부경대학교 사회복지학과 현장실습 프로그램 확대</li>
         <li>학생 진로 및 취업 지원 비교과 프로그램 운영</li>
@@ -226,20 +338,21 @@
 
     <section id="stats" class="card page">
       <h2>📊 사회복지 통계</h2>
-      <p>대한민국 노인 인구 비율</p>
+
+      <p style="color:#5c4300;">대한민국 노인 인구 비율</p>
       <div class="stat-number">20%↑</div>
 
-      <p>청년 우울감 경험률</p>
+      <p style="color:#5c4300;">청년 우울감 경험률</p>
       <div class="stat-number">28.3%</div>
 
-      <p>1인 가구 비율 증가</p>
+      <p style="color:#5c4300;">1인 가구 비율 증가</p>
       <div class="stat-number">34%</div>
     </section>
 
   </main>
 
   <footer>
-    제작자 GitHub : 
+    제작자 GitHub :
     <a href="https://github.com/sorin060130" target="_blank">
       github.com/sorin060130
     </a>
@@ -247,10 +360,13 @@
 
   <script>
     async function getWeather() {
-      const weatherBox = document.getElementById('weather');
+      const weatherBox = document.getElementById('weatherBox');
 
       try {
-        const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=35.1796&longitude=129.0756&current_weather=true');
+        const response = await fetch(
+          'https://api.open-meteo.com/v1/forecast?latitude=35.1796&longitude=129.0756&current_weather=true'
+        );
+
         const data = await response.json();
 
         const weather = data.current_weather;
@@ -276,6 +392,7 @@
       });
 
       const selectedPage = document.getElementById(pageId);
+
       if (selectedPage) {
         selectedPage.classList.add('active');
       }
@@ -289,27 +406,10 @@
       if (hash) {
         showPage(hash);
       } else {
-        showPage('weather');
+        showPage('home');
       }
     });
   </script>
 
 </body>
 </html>
-
-<section class="hero page active" id="home">
-  <div class="hero-text">
-    <h1>부경대 사회복지 실무역량 짱이다 ✨</h1>
-    <p class="hero-desc">
-      부산의 날씨, 이슈, 부경대 뉴스와 사회복지 통계를 한눈에 확인하세요!
-    </p>
-
-    <p class="hero-message">
-      함께 배우고 성장하는 사회복지 실무 역량 🌟
-    </p>
-  </div>
-
-  <div class="hero-image">
-    <img src="./증명사진.jpg" alt="프로필 사진">
-  </div>
-</section>
